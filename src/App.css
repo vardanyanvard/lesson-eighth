@@ -1,0 +1,94 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.dashboardWrapper {
+  display: grid;
+  grid-template-columns: 256px 1fr;
+}
+
+.formWrapper form {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  padding: 50px 20px 20px;
+  box-shadow: 1px 0 4px #ededed;
+  margin-right: 16px;
+}
+
+.formWrapper form input,
+button {
+  height: 33px;
+  border-radius: 6px;
+  padding: 0 8px;
+  border: 1px solid gray;
+  outline: none;
+}
+
+.formWrapper form button {
+  cursor: pointer;
+  background-color: #04aa6d;
+  color: #fff;
+  border: none;
+}
+
+.formFiled p {
+  color: red;
+  font-size: 10px;
+  margin-top: 2px;
+  font-family: Verdana, sans-serif;
+}
+
+.formFiled {
+  display: flex;
+  flex-direction: column;
+  min-height: 55px;
+  padding-bottom: 6px;
+}
+
+.tableWrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.tableContentWrapper {
+  overflow-y: auto;
+  height: 50vh;
+  width: 80%;
+
+}
+
+.tableWrapper table {
+  font-family: Verdana, sans-serif;
+  width: 100%;
+}
+
+
+
+tr:nth-of-type(even) {
+  background-color: #ededed;
+}
+
+th {
+  border-bottom: 1px solid gray;
+  padding-bottom: 4px;
+}
+
+td {
+  text-align: center;
+  height: 33px;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+  max-width: 100px;
+
+}
+
+caption {
+  font-size: 22px;
+  margin-bottom: 20px;
+}
